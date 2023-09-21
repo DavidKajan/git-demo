@@ -1,0 +1,500 @@
+   88  cd ..
+   89  clear
+   90  cd ..
+   91  notepad index.html 
+   92  git add index.html 
+   93  notepad index.html 
+   94  git status
+   95  git add index.html 
+   96  git status
+   97  git commit -m "Changed heading"
+   98  notepad index.html 
+   99  notepad index.html 
+  100  git add .
+  101  git commit
+  102  git log
+  103  git log
+  104  git log -2
+  105  git log -n 3
+  106  git log --author "Student Java"
+  107  git log --name-only
+  108  git log --name-status
+  109  git log --pretty=oneline
+  110  ls
+  111  cd git_demo2
+  112  git log
+  113  git log
+  114  git cat-file 45044b7b5048bdf89faa572f4384bb60ad5731a6 -p
+  115  git cat-file cf2fdb704a70aa071425a2c4a98fadd7061976db -p
+  116  git cat-file db3e0ad3463d54ffa01dc285614e80043d3f2d9e -p
+  117  cd .git
+  118  cd objects/
+  119  ls
+  120  cd db
+  121  ls
+  122  cat 3e0ad3463d54ffa01dc285614e80043d3f2d9e 
+  123  cd ..
+  124  cd ..
+  125  cd ..
+  126  clear
+  127  git branch
+  128  git checkout -b fix
+  129  git log
+  130  clear
+  131  git checout master
+  132  git checkout master
+  133  git checkout -b fix1
+  134  notepad index.html 
+  135  git status
+  136  git commit -a -m "Addition message"
+  137  notepad index.html 
+  138  git commit -a -m "Another additional message"
+  139  git log
+  140  git checkout master
+  141  notepad app.css 
+  142  git commit -a -m "Changed background color"
+  143  git checkout fix1
+  144  git log
+  145  git rebase master
+  146  git log
+  147  git checkout master
+  148  git merge fix1
+  149  git log
+  150  git log
+  151  git checkout fix1
+  152  notepad index.html 
+  153  git commit -a -m "Deleted the last images"
+  154  notepad index.html 
+  155  git commit -a -m "Deleted paragraph of text"
+  156  notepad index.html 
+  157  git commit -a -m "Deleted another two images"
+  158  git checkout master
+  159  notepad app.css
+  160  git commit -a -m "Changed font color to blue"
+  161  notepad index.html 
+  162  git commit -a -m "Deleted special characters in heading"
+  163  notepad index.html 
+  164  git commit -a -m "Deleted paragraph below main heading"
+  165  git checkout fix1
+  166  git log
+  167  git checkout master
+  168  git cherry-pick 75640874ce
+  169  git log
+  170  git remote add origin https://github.com/student040404/git_demo2.git
+  171  git remote -v
+  172  git push -u origin master
+  173  git status
+  174  notepad index.html 
+  175  git commit -a -m "Deleted picture"
+  176  git log
+  177  git push origin master
+  178  git lgo
+  179  git log
+  180  clear
+  181  ls
+  182  notepad index.html 
+  183  git status
+  184  git checkout -- index.html
+  185  git status
+  186  notepad index.html 
+  187  notepad app.css 
+  188  git status
+  189  git checkout -- .
+  190  git status
+  191  notepad index.html 
+  192  notepad app.js 
+  193  git restore .
+  194  git status
+  195  notepad index.html 
+  196  git add index.html 
+  197  git status
+  198  git restore --staged index.html 
+  199  git status
+  200  git restore index.html 
+  201  git status
+  202  notepad index.html 
+  203  git add index.html 
+  204  git commit -m "Added link to google"
+  205  git log
+  206  notepad index.html 
+  207  git status
+  208  git add index.html 
+  209  git status
+  210  git commit --amend
+  211  git log
+  212  git status
+  213  notepad index.html 
+  214  notepad app.css
+  215  notepad app.js
+  216  git status
+  217  git diff
+  218  git status
+  219  git add .
+  220  git status
+  221  git diff
+  222  git diff --staged
+  223  git status
+  224  git restore --staged .
+  225  git status
+  226  git restore .
+  227  git status
+  228  notepad project.info
+  229  git status
+  230  notepad .gitignore
+  231  git status
+  232  git add .
+  233  git commit -m "Added .gitignore file"
+  234  git status
+  235  notepad project.info 
+  236  git status
+  237  ls
+  238  mkdir build
+  239  notepad build.out
+  240  ls
+  241  ls
+  242  cd build/
+  243  ls
+  244  cd ..
+  245  ls
+  246  notepad .gitignore
+  247  git status
+  248  git add .gitignore 
+  249  git commit -m "Changed .gitignore file"
+  250  git status
+  251  notepad .gitignore 
+  252  git log
+  253  cd ..
+  254  mkdir git_03
+  255  cd git_03
+  256  git init
+  257  git status
+  258  git add .
+  259  git commit -m "First commit"
+  260  git log
+  261  notepad index.html 
+  262  git add .
+  263  git commit -m "Added another paragraph of text"
+  264  git log
+  265  git branch
+  266  git branch color-experiment
+  267  git branch
+  268  git checkout color-experiment 
+  269  notepad app.css
+  270  git add .
+  271  git commit -m "Added the color of the text to white"
+  272  git log
+  273  git branch
+  274  git checkout master
+  275  notepad index.html 
+  276  git add .
+  277  git commit -m "Changed main heading"
+  278  git log
+  279  git checkout -b bugfix
+  280  notepad index.html 
+  281  git add .
+  282  git commit -m "Added welcome message"
+  283  notepad index.html 
+  284  git commit -a -m "Added change heading h2"
+  285  git checkout master
+  286  git merge bugfix
+  287  git log
+  288  git merge color-experiment 
+  289  git log
+  290  git log
+  291  git checkout bugfix 
+  292  notepad index.html 
+  293  git commit -a -m "Changed main heading"
+  294  git checkout master
+  295  notepad index.html 
+  296  git commit -a -m "Changed heading and paragraphs"
+  297  git merge bugfix
+  298  notepad index.html 
+  299  git status
+  300  git add index.html 
+  301  git commit
+  302  git log --graph
+  303  gitk
+  304  git branch
+  305  git branch -d bugfix 
+  306  git branch
+  307  git branch -d color-experiment 
+  308  git branch
+  309  git branch -d master
+  310  git init
+  311  ls
+  312  ls -la
+  313  echo "java"
+  314  echo "java" | git hash-object --stdin
+  315  echo "jama" | git hash-object --stdin
+  316  git --version
+  317  cd .git
+  318  ls
+  319  cd objects/
+  320  ls
+  321  cd ../..
+  322  echo "jama" | git hash-object --stdin -w
+  323  cd .git
+  324  cd objects/
+  325  ls
+  326  cd d2
+  327  ls
+  328  cat 95619f42fb7e5a3ce06fe515a3869d589f25ab 
+  329  cd ../..
+  330  cd ..
+  331  git cat-file d295619f42fb7e5a3ce06fe515a3869d589f25ab -p
+  332  clear
+  333  git config --global user.name "Ladislav Borak"
+  334  git config --global user.name
+  335  git config --global user.email "student.java@smartyacademy.sk"
+  336  git config --global user.email
+  337  git config --global user.name "Student Java"
+  338  notepad index.html
+  339  git status
+  340  git add index.html 
+  341  git status
+  342  git commit -m "My first commit"
+  343  git status
+  344  notepad index.html 
+  345  git status
+  346  git add index.html 
+  347  git status
+  348  git commit -m "Changed main header text"
+  349  git status
+  350  history
+  351  clear
+  352  history > zaloha_prikazov.txt
+  353  ls
+  354  notepad zaloha_prikazov.txt 
+  355  rm -rf zaloha_prikazov.txt 
+  356  clera
+  357  clear
+  358  notepad app.js
+  359  notepad index.html 
+  360  git status
+  361  git add index.html app.js 
+  362  git status
+  363  git commit -m "Added js file"
+  364  notepad app.css
+  365  notepad index.html 
+  366  git status
+  367  git add app.css
+  368  git commit -m "Added css file"
+  369  git status
+  370  git add index.html 
+  371  git commit -m "Linking app.css to index.html"
+  372  git status
+  373  notepad index.html 
+  374  git add index.html 
+  375  git status
+  376  notepad index.html 
+  377  notepad index.html 
+  378  git status
+  379  git add index.html 
+  380  git commit -m "Added subheading"
+  381  notepad index.html 
+  382  exit
+  383  git log
+  384  clear
+  385  git status
+  386  notepad index.html 
+  387  git add .
+  388  git status
+  389  git commit
+  390  git log
+  391  git log
+  392  git log -2
+  393  git log -n 3
+  394  git log --author "Student Java"
+  395  git log --name-only
+  396  git log --name-status
+  397  git log --prety=oneline
+  398  git log --pretty=oneline
+  399  notepad tmp.txt
+  400  git status
+  401  git add tmp.txt 
+  402  git commit -m "Added test file"
+  403  git status
+  404  ls
+  405  rm -rf tmp.txt 
+  406  ls
+  407  git status
+  408  git add .
+  409  git status
+  410  git commit -m "Deleted test file"
+  411  git log
+  412  git log -p
+  413  notepad index.html 
+  414  notepad app.css
+  415  git status
+  416  git checkout -- app.css
+  417  git status
+  418  git checkout -- index.html
+  419  git status
+  420  notepad index.html 
+  421  notepad app.css
+  422  git status
+  423  git checkout -- .
+  424  git status
+  425  notepad index.html 
+  426  notepad app.css
+  427  git restore .
+  428  git status
+  429  notepad index.html 
+  430  git add index.html 
+  431  git status
+  432  git restore --staged index.html 
+  433  git status
+  434  git restore index.html 
+  435  git status
+  436  git status
+  437  notepad index.html 
+  438  git add .
+  439  git commit -m "Added another paragraph of text"
+  440  git log
+  441  git log -p
+  442  notepad index.html 
+  443  git status
+  444  git add index.html 
+  445  git status
+  446  git commit --amend
+  447  git status
+  448  git log
+  449  notepad index.html 
+  450  notepad app.js 
+  451  notepad app.css 
+  452  git status
+  453  git diff
+  454  git status
+  455  git add .
+  456  git status
+  457  git diff
+  458  git diff --staged
+  459  clear
+  460  notepad project.info
+  461  git status
+  462  git restore --staged .
+  463  git status
+  464  git restore app.css app.js index.html 
+  465  git status
+  466  notepad .gitignore
+  467  git status
+  468  rm -rf .gitignore.txt 
+  469  notepad .gitignore
+  470  git status
+  471  touch .gitignore
+  472  ls
+  473  ls -la
+  474  notepad .gitignore
+  475  git status
+  476  notepad project.info 
+  477  git status
+  478  git add .
+  479  git commit -m "Added gitignore file"
+  480  git status
+  481  ls
+  482  mkdir build
+  483  cd buil
+  484  cd build
+  485  touch build.out
+  486  notepad build.out 
+  487  cd ..
+  488  ls
+  489  notepad .gitignore
+  490  git status
+  491  git add .
+  492  git commit -m "Added build directory to gitignore"
+  493  git status
+  494  cd build/
+  495  touch test01.txt
+  496  cd ..
+  497  git status
+  498  git .gitignore
+  499  notepad .gitignore
+  500  exit
+  501  ls
+  502  mkdir git-demo
+  503  ls
+  504  cd git-demo/
+  505  notepad index.html
+  506  git init
+  507  ls
+  508  ls -la
+  509  cd .git/
+  510  ls
+  511  cd ..
+  512  git status
+  513  git add index.html 
+  514  git status
+  515  git commit -m "Pociatocny commit"
+  516  git status
+  517  echo Karol
+  518  echo Igor Vysoky
+  519  echo "buchty na pare" | git hash-object --stdin
+  520  echo "buchta na pare" | git hash-object --stdin
+  521  git config --global user.name
+  522  git config --global user.email
+  523  git log
+  524  notepad index.html 
+  525  git status
+  526  git add index.html 
+  527  git status
+  528  git commit -m "Changed main heading"
+  529  git status
+  530  git log
+  531  notepad app.js
+  532  notepad index.html 
+  533  git status
+  534  git add index.html app.js 
+  535  git status
+  536  git commit -m "Added js file"
+  537  git status
+  538  git log
+  539  notepad app.css
+  540  notepad index.html 
+  541  git status
+  542  git add app.css 
+  543  git commit -m "Added app.css file"
+  544  git status
+  545  git add index.html 
+  546  git commit -m "Linking CSS to index.html"
+  547  git status
+  548  git log
+  549  git log
+  550  notepad index.html 
+  551  git add index.html 
+  552  git status
+  553  notepad index.html 
+  554  git status
+  555  git add index.html 
+  556  git status
+  557  notepad index.html 
+  558  git commit -m "Added paragraph of text"
+  559  notepad index.html 
+  560  git add index.html 
+  561  git commit
+  562  git log
+  563  git log
+  564  git log -2
+  565  git log -n 3
+  566  git log --author "Student Java"
+  567  git log --name-only
+  568  git log --name-status
+  569  git log --pretty=oneline
+  570  git log --pretty=oneline
+  571  notepad tmp.txt
+  572  git status
+  573  git add .
+  574  git status
+  575  git commit -m "Added test file"
+  576  ls
+  577  cat tmp.txt 
+  578  rm -rf tmp.txt 
+  579  ls
+  580  git status
+  581  git add tmp.txt 
+  582  git commit -m "Deleted test file"
+  583  git status
+  584  git log
+  585  git log -p
+  586  history
+  587  history > zaloha_git.txt
